@@ -1,0 +1,30 @@
+<%- include ('partials/_header') -%>
+<div class="row mt-md-5">
+  <div class="col-md-5 offset-md-3 card">
+    <div class="card-body">
+
+<form action="/update/<%= data.Id_uni %>" method="POST">
+    <div class="form-group">
+      <input type="number" name="Id_uni"  placeholder="Id de unidad" value="<%= data.Id_uni %>" class="form-control"> 
+    </div>
+    <div class="form-group">
+      <input type="number" name="Num_uni" placeholder="Numero" value="<%= data.Num_uni %>" class="form-control"> 
+    </div>
+    <div class="form-group">
+      <input type="text" name="Desc_uni" placeholder="Marca" value="<%= data.Desc_uni %>" class="form-control"> 
+    </div>
+    <div class="form-group">
+      <input type="text" name="Placas" placeholder="Placas" value="<%= data.Placas %>" class="form-control"> 
+    </div>
+    <div class="form-group">
+      <input type="number" name="Id_emp" placeholder="Empleado" value="<%= data.Id_emp %>" class="form-control"> 
+    </div>
+    <button type="submit" class="btn btn-primary">
+      Modificar Unidad
+    </button>
+    </form>
+    </div>
+  </div>
+</div>
+         
+<%- include ('partials/_footer') -%>
